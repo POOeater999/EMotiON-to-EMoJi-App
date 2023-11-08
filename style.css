@@ -1,33 +1,53 @@
-body{
-text-align: center;
-color: aquamarine;
-
-background-color: blueviolet;
+body
+{
+  color: white;
+  background: powderblue;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 4px solid slateblue ;
+  width: 400px;
+  height: 350px; 
+  border-radius:20px ;
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
 }
 
-#heading{
-    font-family: 'MinecrafterAltRegular';
-    text-align: center;
+.heading{
+  font-size: 50px;
+  font-family: 'MinecrafterAltRegular';
+  border-radius: 45px;
+  border-style: solid ;
+  border-width: 5px;
 }
 
-#camera{
-    border: 4px ridge blue;
-    width: 400px;
-    height: 350px;
-    text-align: center;
-    margin-left: 100px;
+#p{
+  text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.224);
+
 }
 
-#result{
-    border: 4px ridge blue;
-    width: 400px;
-    height: 350px;
-    text-align: center;
-    margin-left: 100px;
-   
-    
+label{
+  background-color: rgb(0, 255, 170);
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 20px;
 }
 
-hr{
-    width: 50%;
+.snap{
+  border: 2px rgb(74, 143, 255) solid;
+
 }

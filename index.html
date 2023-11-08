@@ -1,7 +1,7 @@
-<html>
 
-<head>
-    <title>Hand Gesture Project</title>
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -12,66 +12,83 @@
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraft" type="text/css"/>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
     
-    <h1 id="heading">HAND GESTURE PROJECT
-        <br>
-     
-    </h1>
-    <hr>
-    
-    <p id="p" style="font-size: 22px;">Take your photo and identify gesture!
-        <br>
-        <span>&#128077;</span>
-        <span>&#128078;</span>
-        <span>&#9996;</span>
-      
-    </p>
-    <br><br>
+  </head>
 
-    <div class="col-md-4 col-sm-12 col-xs-12">
-        <label>Webcam View - </label>
-      <div id="camera"></div>
+  <body>
+  <div class="container">
+  
+    <center>
+
+      <h3 class="btn btn-warning heading">
+        EMOTION TO EMOJI APP
+        <br>
+        <span>&#128522;</span>
+        <span>&#128512;</span>
+        <span>&#128532;</span>
+        <span>&#128546;</span>
+        <span>&#128545;</span>
+        <span>&#128548;</span>
+        <span>💩</span>
+      </h3>
 
       <br><br>
-      <button class="btn btn-info snap" onclick="take_snapshot()">CAPTURE IMAGE!</button>
 
-    </div>
+      <p id="p" style="font-size: 22px;">Take your selfie to generate emoji
+      	<br>
+        <b style="color: yellow">Are you Happy?</b>
+        <br>
+        <b style="color: black">Are you Sad?</b>
+        <br>
+        <b style="color: red">Are you Angry?</b>
+        <br>
+      </p>
 
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Webcam View - </label>
+        <div id="camera"></div>
 
+        <br><br>
+        <button class="btn btn-info snap" onclick="take_snapshot()">CAPTURE IMAGE!</button>
 
-    <div class=" col-md-4 col-sm-12 col-xs-12">
-        <label >Prediction 1 - </label>
-      <p class="gesture_name" id="result_gesture_name"></p>
-      <p class="emoji" id="update_emoji"></p>
-
-
-      
-      
-
-      
-      
-    </div>
-
-
-
-
-    <div class="col-md-4 col-sm-12 col-xs-12">
-        <label>Snapshot - </label>
-      <div id="result"></div>
-
-      <br><br>
-      <button class="btn btn-primary snap" onclick="check()">PREDICT GESTURE!</button>
-
-    </div>
-
-  </center>
-
-</div>
-   
+      </div>
 
 
-</body>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Prediction 1 - </label>
+        <p class="emotion_name" id="result_emotion_name"></p>
+        <p class="emoji" id="update_emoji"></p>
+
+
+        <label>Prediction 2 - </label>
+        <p class="emotion_name" id="result_emotion_name2"></p>
+        <p class="emoji" id="update_emoji2"></p>
+        
+
+        
+        
+      </div>
+
+
+
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="result"></div>
+
+        <br><br>
+        <button class="btn btn-primary snap" onclick="check()">PREDICT EMOTION!</button>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
 </html>
+
+ 
